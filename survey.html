@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Scheda Reclutamento</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title>">Scheda Reclutamento SOF</h1>
+      <div id="description"><p>E' giunto il momento di unirsi al branco</p>
+      <p>Sarai all'altezza?</p></div>
+    </header>
+
+    <div class="container">
+
+      <form id="survey-form">
+
+         <div class="formgroup">
+         <label id="name-label" for="name">Nome</label>
+         <input type="text" id="name" class="form-control" name="name" value="" placeholder="INSERISCI IL TUO NOME" required>
+         </div>
+       <div class="formgroup">
+         <label id="email-label" for="email">Email</label>
+         <input type="text" id="email" class="form-control" name="email" value="" placeholder="INSERISCI LA TUA EMAIL" required>
+      </div>
+       <div class="formgroup">
+         <label id="eta" for="eta">Età (opzionale)</label>
+         <input type="text" id="eta" class="form-control" name="eta" value="" placeholder="INSERISCI LA TUA ETA'">
+      </div>
+       <div class="formgroup">
+         <label id="role" for="role">Quale ruolo vorresti intraprendere?</label>
+         <select id="dropdown" class="formgroup" name="role" required>
+           <option value="assaltatore">Assaltatore</option>
+           <option value="cecchino">Cecchino</option>
+           <option value="Scout">Scout</option>
+           <option value="mitragliere">Mitragliere</option>
+           <option value="tiratorescelto">Tiratore scelto</option>
+           <option value="navigatore">Navigatore</option>
+           <option value="comunicazioni">Comunicazioni</option>
+         </select></div>
+
+    <div class="formgroup">
+       <p>Hai mai giocato a Softair?</p>
+       <label>
+         <input name="raccomandato" type="radio" value="principiante" class="input-radio" checked  >
+         Sono alla prima esperienza
+       </label>
+       <label>
+         <input name="raccomandato" type="radio" value="intermedio" class="input-radio" checked  >
+         Gioco da più di un anno
+       </label>
+       <label>
+         <input name="raccomandato" type="radio" value="esperto" class="input-radio" checked  >
+         Gioco da più di 5 anni
+       </label></div>
+
+       <div class="formgroup">
+         <label id="piattaforma" for="piattaforma">Con quale replica giochi o vorresti giocare?</label>
+         <select id="dropdown" class="formgroup" name="piattaforma" required>
+           <option value="cecchino">M4/MK18/M16</option>
+           <option value="Scout">AK 47/74</option>
+           <option value="comunicazioni">AK 416/417</option>
+           <option value="tiratorescelto">SCAR</option>
+           <option value="navigatore">ACR</option>
+           <option value="comunicazioni">G36</option>
+           <option value="comunicazioni">SIG</option>
+           <option value="comunicazioni">GALIL</option>
+           <option value="comunicazioni">AUG</option>
+           <option value="comunicazioni">ARX</option>
+           <option value="comunicazioni">MP5</option>
+           <option value="comunicazioni">MITRAGLIATRICI</option>
+           <option value="comunicazioni">TIPO SNIPER</option>
+           <option value="comunicazioni">ALTRO</option>
+         </select></div>
+
+       <div class="formgroup">
+           <p>Quali sport hai praticato o pratichi</p>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="crosstraining">
+             Cross-training
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="sportdisquadra">
+             Sport di squadra
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="acquatici">
+             Acquatici
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="tiroarco">
+             Arceria/Tiro dinamico
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="sportcombattimento">
+             Sport da combattimento
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="bushcraftsurvival">
+             Buschcraft/Hiking/Survival/Orientiring
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="sportinvernali">
+             Sport invernali
+           </label>
+           <label>
+             <input type="checkbox" class="input-checkbox" name="sport" value="altrosport">
+             Altri
+           </label>
+      </div>
+
+      <div class="formgroup">
+        <p>Commenti o domande ulteriori?</p>
+        <textarea name="name" class="input-textarea" placeholder="Inserisci il testo qui..."></textarea>
+      </div>
+
+      <div class="formgroup">
+        <button type="submit" class="submit-button" name="button">
+          Conferma
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+
+       </form>
+
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
