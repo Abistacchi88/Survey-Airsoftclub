@@ -30,14 +30,9 @@ header{
   font-style: italic;
 }
 
-#description p {
-  display: block;
-  text-align: center;
-}
-
 
 #title{
-
+   font-size: 20px;
 }
 
 #description{
@@ -46,6 +41,10 @@ header{
   text-align: center;
 }
 
+#description p {
+  display: block;
+  text-align: center;
+}
 
 .container{
   margin: 3.125rem auto 0 auto;
@@ -81,6 +80,18 @@ label{
   font-size: 2rem;
   margin-bottom: 0.5rem;
   align-items: center;
+  }
+
+  #name-label{
+
+  }
+
+  #email-label{
+
+  }
+
+  #number-label{
+
   }
 
   input, button, select, textarea {
@@ -128,7 +139,7 @@ option{
     resize: vertical;
 }
 
-.submit-button{
+#submit-button{
     display: block;
     width: 100%;
     padding: 0.90rem;

@@ -16,21 +16,19 @@
     </header>
 
     <div class="container">
-
       <form id="survey-form">
-
-         <div class="formgroup">
+       <div class="formgroup">
          <label id="name-label" for="name">Nome</label>
-         <input type="text" id="name" class="form-control" name="name" value="" placeholder="INSERISCI IL TUO NOME" required>
-         </div>
+         <input type="text" id="name" placeholder="Inserisci nome e cognome" class="form-control" name="name" value="" placeholder="INSERISCI IL TUO NOME" required>
+       </div>
        <div class="formgroup">
          <label id="email-label" for="email">Email</label>
-         <input type="text" id="email" class="form-control" name="email" value="" placeholder="INSERISCI LA TUA EMAIL" required>
-      </div>
+         <input type="email" id="email" placeholder="Inserisci il tuo indirizzo Email"  class="form-control" name="email" value="" placeholder="INSERISCI LA TUA EMAIL" required>
+       </div>
        <div class="formgroup">
-         <label id="eta" for="eta">Età (opzionale)</label>
-         <input type="text" id="eta" class="form-control" name="eta" value="" placeholder="INSERISCI LA TUA ETA'">
-      </div>
+         <label id="number" for="number">Età (opzionale)</label>
+         <input type="number-laber" id="number" placeholder="Inserisci la tua età" min="18" max="60" class="form-control" name="eta" value="" placeholder="INSERISCI LA TUA ETA'">
+       </div>
        <div class="formgroup">
          <label id="role" for="role">Quale ruolo vorresti intraprendere?</label>
          <select id="dropdown" class="formgroup" name="role" required>
@@ -43,20 +41,20 @@
            <option value="comunicazioni">Comunicazioni</option>
          </select></div>
 
-    <div class="formgroup">
-       <p>Hai mai giocato a Softair?</p>
-       <label>
-         <input name="raccomandato" type="radio" value="principiante" class="input-radio" checked  >
+       <div class="formgroup">
+        <p>Hai mai giocato a Softair?</p>
+        <label>
+        <input name="radio-select" type="radio" value="principiante" class="input-radio">
          Sono alla prima esperienza
-       </label>
-       <label>
-         <input name="raccomandato" type="radio" value="intermedio" class="input-radio" checked  >
+        </label>
+        <label>
+        <input name="radio-select" type="radio" value="intermedio" class="input-radio">
          Gioco da più di un anno
-       </label>
-       <label>
-         <input name="raccomandato" type="radio" value="esperto" class="input-radio" checked  >
+        </label>
+        <label>
+        <input name="radio-select" type="radio" value="esperto" class="input-radio">
          Gioco da più di 5 anni
-       </label></div>
+       </label>
 
        <div class="formgroup">
          <label id="piattaforma" for="piattaforma">Con quale replica giochi o vorresti giocare?</label>
@@ -80,46 +78,46 @@
        <div class="formgroup">
            <p>Quali sport hai praticato o pratichi</p>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="crosstraining">
+             <input type="checkbox" class="input-checkbox" name="crosstraining" value="crosstraining">
              Cross-training
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="sportdisquadra">
+             <input type="checkbox" class="input-checkbox" name="sportdisquadra" value="sportdisquadra">
              Sport di squadra
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="acquatici">
+             <input type="checkbox" class="input-checkbox" name="acquatici" value="acquatici">
              Acquatici
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="tiroarco">
+             <input type="checkbox" class="input-checkbox" name="tiroarco" value="tiroarco">
              Arceria/Tiro dinamico
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="sportcombattimento">
+             <input type="checkbox" class="input-checkbox" name="sportcombattimento" value="sportcombattimento">
              Sport da combattimento
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="bushcraftsurvival">
+             <input type="checkbox" class="input-checkbox" name="bushcraftsurvival" value="bushcraftsurvival">
              Buschcraft/Hiking/Survival/Orientiring
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="sportinvernali">
+             <input type="checkbox" class="input-checkbox" name="sportinvernali" value="sportinvernali">
              Sport invernali
            </label>
            <label>
-             <input type="checkbox" class="input-checkbox" name="sport" value="altrosport">
+             <input type="checkbox" class="input-checkbox" name="altrosport" value="altrosport">
              Altri
            </label>
       </div>
 
       <div class="formgroup">
         <p>Commenti o domande ulteriori?</p>
-        <textarea name="name" class="input-textarea" placeholder="Inserisci il testo qui..."></textarea>
+        <textarea name="inserisci" class="input-textarea" placeholder="Inserisci il testo qui..."></textarea>
       </div>
 
       <div class="formgroup">
-        <button type="submit" class="submit-button" name="button">
+        <button type="submit" id="submit-button" name="button">
           Conferma
         </button>
       </div>
